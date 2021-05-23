@@ -4,7 +4,9 @@
     background-color:#BEE1E8;
 }
 
-
+sup{
+    font-size: 6px;
+}
 
 div#general {
     margin:auto;

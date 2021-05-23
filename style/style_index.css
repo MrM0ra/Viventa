@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color:#BEE1E8;
+}
+
+div#menu{
+    width:100%;
+    height:100px;
+   
+}
+
+div#general {
+    margin:auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  
+   
+    
+}
+
+div#imagen {
+    float: left;
+    width: 50%;
+    height: 500px;
+
+}
+
+
+div#bienvenida {
+    float: right;
+    width: 40%;
+    height: 200px;
+    margin-top: 150px;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+div#prediccion {
+    margin-top: 530px;
+}
+
+div#preguntas {
+    margin-top: -4px;
+    float: left;
+    width: 50%;
+    height: 500px;
+    line-height: 37px;
+    text-align: right;
+    font-size: 18px;
+    font-family: sans-serif;
+
+}
+div#respuestas {
+    float: right;
+    width: 10%;
+    height: 500px;
+    text-align:left;
+    margin-right:520px;
+}
+
+.select2 {
+    border-radius: 5px;
+    height: 30px;
+    width: 180px;
+    outline: none;
+    background-color: #dfe;
+    border: 1px solid #39c;
+}
+.input2 {
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 30px;
+    width: 180px;
+    outline: none;
+    background-color: #dfe;
+    border: 1px solid #39c;
+}
+
+.submit2 {
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 120px;
+    outline: none;
+    background-color: #dfe;
+    border: 1px solid #2E4053;
+   
+}
+
+h2 {
+
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

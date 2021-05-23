@@ -19,7 +19,7 @@ pisos
 , dtype=np.float64
 '''
 
-array = np.array([1.0])
+array = np.array([[1.0]])
 
 app = Flask(__name__)
 
@@ -41,7 +41,7 @@ def hello_world():
 		cons_area = (float(request.form["cons_area"]))
 		estrato = (int(request.form["estrato"]))
 		floor = (int(request.form["floor"]))
-		array = np.array([viv_type, rooms, baths, lots, priv_area, cons_area, estrato, floor])
+		array = np.array([[viv_type, rooms, baths, lots, priv_area, cons_area, estrato]])
 		return redirect(url_for("prediction"))
 
 
@@ -51,6 +51,8 @@ def prediction():
 	clf=load('modelo_entrenado.pkl')
 	array.reshape(1, -1)
 	prediccion=clf.predict(array)
+	#prediccion=prediccion**10
+	prediccion=10**prediccion
 	return render_template("prediction.html", args=prediccion)
 
 if __name__ == '__main__':

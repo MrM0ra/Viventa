@@ -8,6 +8,7 @@ Initial imports to be used alongside the project
 from flask import Flask, redirect, url_for, render_template, request, flash
 from joblib import dump, load
 import numpy as np
+import math
 
 """
 **array:** Initial NumPy Array that will be filled with 
@@ -57,8 +58,8 @@ def prediction():
 	clf=load('modelo_entrenado.pkl')
 	array.reshape(1, -1)
 	prediccion=clf.predict(array)
-	#prediccion=prediccion**10
-	prediccion=10**prediccion
+	prediccion=math.exp(prediccion)
+	prediccion=f"{prediccion:.2f}"
 	return render_template("prediction.html", args=prediccion)
 
 """

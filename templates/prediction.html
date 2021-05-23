@@ -2,11 +2,19 @@
 <html>
 <head>
 	<title>Prediccion</title>
+	<link rel="icon" type="image/png" href="../static/images/logo_transparent.png">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/style_index.css" />
 </head>
 <body>
-	<p>Su vivienda debería costar:</p>
-{% for x in args %}
-	<p>{{x}}</p>
-{% endfor %}
+	<div id="imagen">
+		<img src="../static/images/logo_transparent.png" width="500" height="500" />
+	</div>
+	<div id="bienvenida">
+		
+		<p>Su vivienda debería costar:</p>
+		{% for x in args %}
+			<p>{{x}}</p>
+		{% endfor %}
+	</div>
 </body>
 </html>
